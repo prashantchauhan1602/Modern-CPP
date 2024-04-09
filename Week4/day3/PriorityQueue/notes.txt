@@ -1,0 +1,73 @@
+/*
+    Data Container : It just an implementation of Data structure..
+    Data Structure : Arrangement of Data..
+*/
+
+
+/*
+    Objective: Store the id of 4 employee in a Software system ( for processing later )
+
+    Sample Data: 101, 102, 103, 104, 105
+
+    Option a) :
+        If size is fixed, array data structure 
+
+            101       102     103     104     105
+            0x100H   0x100H  0x100H  0x100H  0x100H
+
+    Option b) :
+        If size is not fixed but the data has to be stored contiguously ----------------> VECTOR
+
+    Option c) :
+        If size is to vary but storing data continuosly is not important -----------> DOUBLY LINKED LIST
+            DOUBLY LINKED LIST ------> std::list 
+
+    Option d) :
+        If element has to accessed in quickest possible time,ordered does not matter and being sequential is
+            not a concern..
+
+        ROW IN A HASH TABLE IS KNOWN AS BUCKET...
+
+        Hash Function : mod by 4         ----> [101, 102,103,201]
+            Example: 
+                [101 ------------> 201]
+                [102] ----------------> 2 [ index.. ]
+
+
+
+        NOTE : RAM USES ARRAY FOR STORING THE DATA...
+
+
+    Option e) :
+        I want to only access at most recently entered data form my data cancellation.. -------> STACK
+
+        STACK USING ARRAY : Fixed_size, mouser etc....
+
+    Option f):
+        If I want to store the data such that I can access the data the earliest (very first) in sequence 
+            and no other item from thd data  ---------------------------> QUEUE
+
+    Objective: 
+        I want to assign free/availabe ^ to projects in HIGHEST ECPERIENCE GETS PROJECT FIRST FASHION.
+                    -----------> PRIORITY QUEUE
+
+        If comparator does < operation, we get MAX_HEAP and vice versa//
+
+        Example : 
+            
+        PRIORITY QUEUE CONSTRUCTOR : 
+            It takes 3 parameters :
+                IMPLEMENTATION OF PRIORITY : 
+                    std::priority_queue(Vptr, std::vector(VPtr), decltype(f1) pq(f1));
+
+                // Third parameters is comparison 
+
+            auto f1 = [](const Vptr& v1, const Vptr2){
+                return v1->price() < v2->price()                     // Comparator function...
+            }; 
+
+            // If lambda function makes, then we have to passed it as a parameters...
+            std::priority_queue<Vptr, std::vector<Vptr>, decltype(f1) pq(f1);
+
+    
+*/

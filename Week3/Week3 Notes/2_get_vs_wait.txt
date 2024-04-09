@@ -1,0 +1,17 @@
+get():
+    Get is a blocking call. 
+    When you call get() on a std::future object, 
+        the calling thread will wait until the result of the asynchronous operation becomes available.
+
+    Once the result becomes available, 
+        get() returns the result (or throws an exception if the asynchronous operation resulted in an exception).
+
+wait():
+    wait() is a non-blocking call. 
+    When you call wait() on a std::future object, 
+        the calling thread will wait until the result of the asynchronous operation becomes available.
+    
+    Unlike get(), wait() does not retrieve the result. 
+    It simply waits for the operation to complete.
+    
+    After calling wait(), you can subsequently call get() to retrieve the result, knowing that the asynchronous operation has completed.

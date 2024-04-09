@@ -1,0 +1,10 @@
+#ifndef TOURISTVEHICLETYPE_H
+#define TOURISTVEHICLETYPE_H
+
+enum class TOURISTVEHICLETYPE{
+    BIKE=1,
+    CAR,
+    BUS,
+};
+
+#endif // TOURISTVEHICLETYPE_H

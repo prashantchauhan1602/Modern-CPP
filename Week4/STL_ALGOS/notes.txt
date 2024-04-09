@@ -1,0 +1,39 @@
+1) std::count_if
+    Count instances matching a condition 
+    Example : Count objects from input data while salary is above 60K
+
+    Input params : begin iterator, end iterator, predicate
+    Output params : the count (numeric value)
+
+2) std::all_of
+    Return TRUE , if ALL INSTANCES IN INPUT data MATCH WITH THE CRITERIA(PREDICATE), FALSE OTHERWISE
+    Input params : begin iterator, end iterator, predicate
+    Output : boolean
+
+3) std::any_of
+    Return TRUE , if ATLEAST ONE INSTANCES IN INPUT data MATCH WITH THE CRITERIA(PREDICATE), FALSE OTHERWISE
+    Input params : begin iterator, end iterator, predicate
+    Output : boolean
+
+
+4) std::none_of
+    Return TRUE , if NONE OF THE  INSTANCES IN INPUT data MATCH WITH THE CRITERIA(PREDICATE), FALSE OTHERWISE
+    Input params : begin iterator, end iterator, predicate
+    Output : boolean
+
+5) std::accumulate: 
+    Aggregates multiple values from container into one consolidated, final and summarize overall value..
+
+    NOTE : 
+        a) It needs a binary operation function which takes
+            i) answer upto current point as first parameters
+            ii) one element from input data (next item through iteration)
+
+        b) operation requies init value (initializing value)
+            summation ----> 0
+            product   -----> 1
+
+            The type of init values and returnn values of accumulate is same..
+
+    Input params :   forward iterator begin, forward iterator end, init value, binary operation function..
+    Output : Final aggreagated singular value (usually numeric, but could be other types too)

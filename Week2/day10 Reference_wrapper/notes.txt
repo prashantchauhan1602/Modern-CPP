@@ -1,0 +1,19 @@
+BankAccount has a DebitCard
+    COMPOSITION...
+
+
+Employee has a PROJECT
+        AGGREGATION 
+            In this we have to make seperate container for project and Employee...
+
+
+
+[           Project                |              90988          ]
+0x100H
+
+If Project is on Stack memory... then it will be tricky to access it...
+    
+
+Diagram : [    EMP101  |   Dev |    45000.0f  | RefWrapper [0x100H]]
+
+

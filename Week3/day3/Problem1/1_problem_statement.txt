@@ -1,0 +1,14 @@
+
+After inputs are received, parallely/concurrently perform 
+
+    following operations :
+
+
+
+        Find square of each number and store it in a result variable "Output" (in 1 to 5 slots..)
+
+        Find cube of each number and store it in a result variable "Output" (in 6 to 10 slots..)
+
+        Find factorial of each number and store it in a result variable "Output" (in 1 to 5 slots..)
+
+

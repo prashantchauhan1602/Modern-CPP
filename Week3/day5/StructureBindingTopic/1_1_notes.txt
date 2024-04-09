@@ -1,0 +1,58 @@
+std::thread              [ CPP 11 ]
+    -std::mutex
+    -std::lock_guard
+    -theory
+        - race condition, join and detach difference
+        -synchronization
+
+std::variant                          [ Similar to Union like C ]     [ CPP 17 ]
+    Remove RunTime Polymorphism...
+        -std::visit
+            Common functionality ---> present in all type of variant data
+                Eg : Like PayTax 
+
+        -std::holds_alternative ( std::get )
+            Eg : Find average revenue
+                Now, we can't extract the value of Employee revenue
+
+    std::variant<Employee, BusineesOwner> v1;
+    Now, it is mandatory to enable the constructor of Employee...[ first value of variant ]
+
+std::optional  [ CPP 17 ]
+    - Use where may or may not condition will satisfy...
+    - Eg : 
+        - Check the condition of Employee having salary greater than 50K
+
+std::variadic_templates [ CPP 11 ]
+    - [ Templates + Recursion = Variadic_templates ]
+    - Note : 
+        It allows us to write function which can take 
+            a) Data of any type
+            b) Take any number of parametrs from 0 to infinite
+
+    - For eg: 
+        printf("%d %s %d ", n1 , s1 , n2); 
+
+    - IMPORTANT : Write function which works on all data type ---> otherwise CTE
+
+fold expresssion 
+    -associativity (left to right, right to left)
+
+std::async , std::future & std::promise
+
+
+std::condition_variable
+    - Used when Producer and Consumer Problem....
+    - In this, without input consumer fucntion will not work...
+    - Similar to async but above point is different..
+
+    -notify (one vs all)
+        - notify all 
+            - Gives info to all consumers but
+            - Jo phle signal ko receive krega vhi data use krega 
+    -wait (wait, wait_until , and wait_for)
+
+if init :
+    - Also works for switch statements...
+
+Structure Binding syntax...

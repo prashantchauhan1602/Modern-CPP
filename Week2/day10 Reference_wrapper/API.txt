@@ -1,0 +1,55 @@
+API : Application Programming Interface
+        A provision to access functionalities of "some system"
+
+For eg : 
+    Android 15 ----> Developers
+        Developers used SDK (SOftware Development Kit)   ---> made up of API
+
+Type of APIs : 
+
+    1) Rest APIs : 
+            No state (one API can call has no connection with other...[Independent] )
+            CRUD Operations 
+
+    2) RPCs   
+    3) GRPCs
+
+    4) GraphQL : 
+            (If you want to access only one or two features except whole data, 
+                GraphQL be used...)
+
+WebSockets : [ Real time Application like chatting box, whatsapp etc ]
+
+# REST APIs :
+
+    API End Points : 
+        The URL which is used to make the Request
+        For eg:
+            https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR
+            <------------------------------->  <---------------------------------->
+                    Website                           API Mapped functions
+
+            In this, there are lot of things like ( ? (question mark) )...
+
+        -Request: 
+            logically Get BTC price in INR
+
+            Types:
+                GET              : Read only request
+                POST 
+                UPDATE
+                DELETE
+
+        -Response:
+            Whatever happens after request is made...
+
+                -Response Code: 
+                    404 : INternal Server Error
+                    401 : Unauthorised Access ...     [ check it once !! ]
+                    200 : Successful query
+
+        -Middlewares  : [ connection b/w cloud and data ]
+        -Status Code
+        -Payload
+        -Headers
+        -Methods

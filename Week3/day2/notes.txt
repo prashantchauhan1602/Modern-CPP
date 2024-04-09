@@ -1,0 +1,38 @@
+Week 1: 
+    -enum class
+    default and deleted function
+    nullptr
+    rvalue reference
+    move constructor
+    move assignment operator
+    in-class initialization
+    uniform initialization 
+    constructor deligation
+    final
+    override
+    noexcept
+    explicit constructor
+
+Week 2:
+    lambda function
+    function wrapper
+    reference wrappers
+    std::bind 
+    std::ref
+
+Week 3:
+    std::thread
+        array of threads
+        std::mutex
+        std::lock_guard
+        writing threads for member function for classes
+    
+    std::variant
+        std::visit
+        std::holds_alternative
+
+    std::optional
+
+    variadic templates (CPP 11)
+
+    fold expression (CPP 17)

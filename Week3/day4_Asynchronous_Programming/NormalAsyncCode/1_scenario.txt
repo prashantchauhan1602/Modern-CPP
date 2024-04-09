@@ -1,0 +1,59 @@
+
+Scenario 1: 
+    I have multiple tasks to complete. Each task is independent.
+        I need to utilize system resource better !!
+
+    For Eg: 
+        Compute square of 100 numbers, cube of same numbers and factorial too...
+
+    Solution: std::thread   --------------------------> be used
+
+
+RACE CONDITION PREVENTION:
+    SYCHRONIZATION PROCESS:
+        MUTEX 
+        LOCKGUARD
+        UNIQUE_LOCK
+
+Scenario 2:
+    There are two functions :
+        a) A function which takes input and saves square in result..
+        b) A function which takes input and saves cube in result..
+
+        GLOBAL VARIABLE RESULT : Apply MUTEX on RESULT ACCESS !!
+
+Scenario 3:
+    An input array has to be processed with square and cube calculation but results are stored in same 
+        result array of 2*N size where , N is the number of inputs..
+
+    Solution : MUTEX  ------------------------> not used...
+
+
+Scenario 4:
+    Value gets generated in a function (Producer), we act on the Producer data in response to it (Consumer function)
+
+    CONDITION_VARIABLE
+        Solution: use std::condition_variable...
+
+Scenario 5:
+
+    I need two threads....One for Music sync and one for Maps !!
+    Music thread can execute with no issues !!
+
+    Difference between Producer Consumer vs Scenario 5 : 
+        In Producer Consumer ---> Consumer doesn't have any arguments..
+
+        But in this sceanrio, Input is also be used like Map syncing ...
+
+    void MapFeature(std::string destination){
+
+        load sorround data();
+
+        find shortest Path to destination();
+    }
+
+    std::thread t1(&MusicSync);
+    std::thrad t2(&MapFeature)
+
+    input abhi nahi h....pr promise ki aate hi de dunga..
+    NOTE : 

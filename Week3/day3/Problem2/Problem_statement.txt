@@ -1,0 +1,51 @@
+Create a function that takes one number as input
+
+    Create a function that 
+        a) Allocate memory on the heap for one integer
+        b) Computes square of input received and saves it in allocated space
+        c) Prints the output on the console as well
+
+
+Design a system  where both function run in seperate threads and use PRoducer Consumer Mechanism in it...
+
+
+Solution A : 
+    Only 1 thread :
+        Single thread program..... ( Nonsense )
+
+Solution B :
+    Only 1 thread, member functions...
+
+Solution C :
+    Multiple thread with synchronization, finish input, then start second function.... !!! WORST 
+        Because technically it is synchronized code...
+
+Solution D:
+    First thread focuses on input, second thread performs malloc,
+        then waits for input to be received.
+            Upon signal, computes square and display result...
+
+    NOTE : We can allocate the memory before the number comes....
+                [ because malloc takes time to allocate the space]
+
+Solution E:
+    First thread focuses on input, second thread performs malloc,
+        then waits for input to be received.
+            Upon signal, computes square and display result...
+
+    NOTE : We can allocate the memory before the number comes....
+                [ because malloc takes time to allocate the space]
+                 
+                 !! EVERYTHING IN THE CLASS....
+
+
+EXPLAINATION:
+
+    Solution A:
+        start ----> input() ----> f2[ malloc, compute, square, display ] ---> end()
+
+    Solution D:
+        start -----> input() ----------------> Number received from user
+                                                                        |
+                                                                        |
+               -----> f2 ----> [ malloc [WAIT MODE FOR INPUT] ]         |-------> [ compute , square, display ]

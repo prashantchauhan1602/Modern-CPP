@@ -1,0 +1,22 @@
+/*
+    HAash Table. :
+    It is like LINKED K
+    Primary key is also works as Hashing key...
+    For example :
+        Employee Id
+
+    Hash function, hash value and hash key...
+
+    Hash function :
+        a mathematical formula which is applied on the "key" and produces "hash_vaue"
+
+    Hash Value :
+        It is the output fo hash funtion applied on the key !!
+
+    Key:
+        It is an attribute or data instacne that can uniquely identify information in the system.
+        Key is aslo attached info for storage purpose..
+
+    For eg : If we want only one or less than 5... [ mod 5 ]
+
+*/
