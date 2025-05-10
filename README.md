@@ -1,7 +1,3 @@
-Certainly! Here's a comprehensive `README.md` for your repository, which organizes Modern C++ concepts week by week, covering topics from basics to advanced features:
-
----
-
 # 📚 Modern C++ – Week-by-Week Learning Repository
 
 This repository is a structured collection of Modern C++ concepts, organized week by week. Each week focuses on specific topics, providing code examples and explanations to facilitate learning and mastery of Modern C++ features.
